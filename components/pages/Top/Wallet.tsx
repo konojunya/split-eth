@@ -1,6 +1,6 @@
 'use client';
 
-import {Button, Image} from '@chakra-ui/react';
+import {Button, Code, Image, Stack} from '@chakra-ui/react';
 import {useCallback, useEffect, useState} from 'react';
 import {connect} from '../../../utils/WalletUtils';
 import QRCode from 'qrcode';
@@ -28,5 +28,10 @@ export const Wallet: React.FC = () => {
     );
   }
 
-  return <Image src={qr} alt={address} />;
+  return (
+    <Stack>
+      <Code>{address}</Code>
+      <Image src={qr} alt={address} />
+    </Stack>
+  );
 };
