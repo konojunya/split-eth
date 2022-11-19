@@ -1,0 +1,14 @@
+{
+  "short_name": "Split Eth",
+  "name": "Split Eth",
+  "icons": [
+    {
+      "src": "/image/favicon.jpg",
+      "sizes": "72x72 96x96 128x128 256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#171923",
+  "background_color": "#171923"
+}
