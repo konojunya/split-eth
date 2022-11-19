@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
         p={4}
         borderRadius="xl"
       >
-        Split by Ether 💸
+        Split by ETH 💸
       </Heading>
     </Box>
   );

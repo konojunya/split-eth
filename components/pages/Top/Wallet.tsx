@@ -21,7 +21,11 @@ export const Wallet: React.FC = () => {
   }, [address]);
 
   if (address === '') {
-    return <Button onClick={handleConnect}>Connect Wallet</Button>;
+    return (
+      <Button bg="white" color="gray.900" onClick={handleConnect}>
+        Connect Wallet
+      </Button>
+    );
   }
 
   return <Image src={qr} alt={address} />;

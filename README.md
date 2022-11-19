@@ -1,2 +1,3 @@
 # split-eth
-Split the bill by Ether
+
+Split the bill by ETH

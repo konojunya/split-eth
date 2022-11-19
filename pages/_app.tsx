@@ -2,9 +2,9 @@ import {Box, ChakraProvider, extendTheme} from '@chakra-ui/react';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
 import {Header} from '../components/shared/Header';
-import {breakpoints, config, styles} from '../styles/theme-config';
+import {breakpoints, styles} from '../styles/theme-config';
 
-const theme = extendTheme({breakpoints, config, styles});
+const theme = extendTheme({breakpoints, styles});
 
 const App = ({pageProps, Component}: AppProps) => {
   return (
@@ -12,15 +12,16 @@ const App = ({pageProps, Component}: AppProps) => {
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <title>Split Ether</title>
-        <meta name="description" content="Split the bill by Ether" />
+        <title>Split by ETH</title>
+        <meta name="description" content="Split the bill by ETH" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:title" content="Split Ether" />
-        <meta property="og:description" content="Split the bill by Ether" />
+        <meta property="og:title" content="Split by ETH" />
+        <meta property="og:description" content="Split the bill by ETH" />
         <meta property="og:image" content="https://split-eth.web.app/ogp.png" />
-        <meta name="twitter:title" content="y9z" />
-        <meta name="twitter:description" content="Split the bill by Ether" />
+        <meta name="twitter:title" content="Split by ETH" />
+        <meta name="twitter:description" content="Split the bill by ETH" />
         <meta
           name="twitter:image"
           content="https://split-eth.web.app/ogp.png"

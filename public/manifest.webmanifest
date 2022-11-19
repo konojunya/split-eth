@@ -1,9 +1,9 @@
 {
-  "short_name": "Split Eth",
-  "name": "Split Eth",
+  "short_name": "Split by ETH",
+  "name": "Split by ETH",
   "icons": [
     {
-      "src": "/image/favicon.jpg",
+      "src": "/favicon.jpg",
       "sizes": "72x72 96x96 128x128 256x256"
     }
   ],

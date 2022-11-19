@@ -15,11 +15,11 @@ import dayjs from 'dayjs';
 import {Wallet} from './Wallet';
 
 interface Props {
-  etherRate: number;
+  ethRate: number;
   bill: number;
 }
 
-export const Result: React.FC<Props> = ({etherRate, bill}) => {
+export const Result: React.FC<Props> = ({ethRate, bill}) => {
   if (bill === 0) {
     return null;
   }
@@ -30,18 +30,20 @@ export const Result: React.FC<Props> = ({etherRate, bill}) => {
         <CardBody>
           <Stack spacing={4}>
             <Stat>
-              <StatLabel>ETH/JPY</StatLabel>
-              <StatNumber>￥{etherRate.toLocaleString()}</StatNumber>
-              <StatHelpText>
+              <StatLabel color="gray.900">ETH/JPY</StatLabel>
+              <StatNumber color="gray.900">
+                ￥{ethRate.toLocaleString()}
+              </StatNumber>
+              <StatHelpText color="gray.900">
                 {dayjs().format('YYYY/MM/DD HH:mm:ss')}
               </StatHelpText>
             </Stat>
 
             <Stack direction="row" align="center">
-              <Text fontWeight="bold" fontSize="2xl">
+              <Text fontWeight="bold" fontSize="2xl" color="gray.900">
                 {bill.toFixed(6)}ether
               </Text>
-              <Text>/ 1人</Text>
+              <Text color="gray.900">/ 1人</Text>
             </Stack>
 
             <Wallet />

@@ -92,8 +92,8 @@ export const Top: React.FC = () => {
             >
               <NumberInputField />
               <NumberInputStepper>
-                <NumberIncrementStepper bg="whiteAlpha.900" />
-                <NumberDecrementStepper bg="whiteAlpha.900" />
+                <NumberIncrementStepper bg="whiteAlpha.900" color="gray.900" />
+                <NumberDecrementStepper bg="whiteAlpha.900" color="gray.900" />
               </NumberInputStepper>
             </NumberInput>
           </FormControl>
@@ -105,7 +105,7 @@ export const Top: React.FC = () => {
       </form>
 
       <Box my={4}>
-        <Result etherRate={rate} bill={bill} />
+        <Result ethRate={rate} bill={bill} />
       </Box>
     </Box>
   );

@@ -1,11 +1,4 @@
-import type {ThemeConfig} from '@chakra-ui/react';
-
 export const breakpoints = ['0em', '1200px'];
-
-export const config: ThemeConfig = {
-  initialColorMode: 'dark',
-  useSystemColorMode: true,
-};
 
 export const FontFamily = {
   Default: '-apple-system, BlinkMacSystemFont, Meiryo, sans-serif',
