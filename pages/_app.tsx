@@ -1,6 +1,15 @@
-import {Box, ChakraProvider, extendTheme} from '@chakra-ui/react';
+import {ExternalLinkIcon} from '@chakra-ui/icons';
+import {
+  Box,
+  ChakraProvider,
+  extendTheme,
+  Text,
+  Link as Anchor,
+  Stack,
+} from '@chakra-ui/react';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
+import Link from 'next/link';
 import {Header} from '../components/shared/Header';
 import {breakpoints, styles} from '../styles/theme-config';
 
@@ -33,6 +42,18 @@ const App = ({pageProps, Component}: AppProps) => {
           <Header />
           <Box px={4}>
             <Component {...pageProps} />
+            <Stack as="footer">
+              <Text>&copy; konojunya</Text>
+              <Link
+                href="https://github.com/konojunya/split-eth"
+                legacyBehavior
+                passHref
+              >
+                <Anchor isExternal>
+                  GitHub <ExternalLinkIcon mx="2px" />
+                </Anchor>
+              </Link>
+            </Stack>
           </Box>
         </Box>
       </ChakraProvider>
