@@ -12,6 +12,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import dayjs from 'dayjs';
+import {Wallet} from './Wallet';
 
 interface Props {
   etherRate: number;
@@ -27,7 +28,7 @@ export const Result: React.FC<Props> = ({etherRate, bill}) => {
     <SlideFade in>
       <Card bg="gray.300">
         <CardBody>
-          <Stack>
+          <Stack spacing={4}>
             <Stat>
               <StatLabel>ETH/JPY</StatLabel>
               <StatNumber>￥{etherRate.toLocaleString()}</StatNumber>
@@ -42,6 +43,8 @@ export const Result: React.FC<Props> = ({etherRate, bill}) => {
               </Text>
               <Text>/ 1人</Text>
             </Stack>
+
+            <Wallet />
           </Stack>
         </CardBody>
       </Card>

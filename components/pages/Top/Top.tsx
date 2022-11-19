@@ -104,7 +104,7 @@ export const Top: React.FC = () => {
         </Stack>
       </form>
 
-      <Box mt={4}>
+      <Box my={4}>
         <Result etherRate={rate} bill={bill} />
       </Box>
     </Box>
