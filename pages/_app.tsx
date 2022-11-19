@@ -28,9 +28,11 @@ const App = ({pageProps, Component}: AppProps) => {
       </Head>
 
       <ChakraProvider theme={theme}>
-        <Header />
-        <Box px={4}>
-          <Component {...pageProps} />
+        <Box maxW="500px" mx="auto">
+          <Header />
+          <Box px={4}>
+            <Component {...pageProps} />
+          </Box>
         </Box>
       </ChakraProvider>
     </main>
