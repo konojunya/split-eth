@@ -87,6 +87,7 @@ export const Top: React.FC = () => {
               name="people"
               variant="unstyled"
               size="lg"
+              min={2}
               value={formik.values.people}
               onChange={handlePeopleChange}
             >
